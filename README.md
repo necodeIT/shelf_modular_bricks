@@ -10,19 +10,19 @@ To use the bricks in your project, init you project using `mason init`. Then add
 bricks:
   module:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks.git
+      url: https://github.com/mcquenji/flutter_modular_bricks
       path: module
   service:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks.git
+      url: https://github.com/mcquenji/flutter_modular_bricks
       path: service
   datasource:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks.git
+      url: https://github.com/mcquenji/flutter_modular_bricks
       path: datasource
   model:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks.git
+      url: https://github.com/mcquenji/flutter_modular_bricks
       path: model
 ```
 
