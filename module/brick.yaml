@@ -1,0 +1,13 @@
+name: module
+description: A flutter_modular module.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.53 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: The name of the module
+    prompt: What's the name of the module you want to create?
