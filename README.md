@@ -12,6 +12,18 @@ bricks:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks.git
       path: module
+  service:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks.git
+      path: service
+  datasource:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks.git
+      path: datasource
+  model:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks.git
+      path: model
 ```
 
 After adding the bricks to your `mason.yaml` file, run `mason get` to download the bricks into your project.
