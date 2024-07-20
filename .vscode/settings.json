@@ -5,5 +5,5 @@
     "conventionalCommits.promptBody": false,
     "conventionalCommitBuilder.autoCommit": false,
     "conventionalCommitBuilder.disableFooter": true,
-    "conventionalCommitBuilder.disableBody": true
+    "conventionalCommitBuilder.disableBody": true,
 }

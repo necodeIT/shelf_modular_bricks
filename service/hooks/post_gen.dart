@@ -1,0 +1,15 @@
+import 'dart:io';
+import 'package:mason/mason.dart';
+
+void run(HookContext context) {
+  final name = (context.vars['name'] as String).snakeCase;
+  final module = (context.vars['module'] as String).snakeCase;
+
+  final f = File('lib/modules/$module/domain/services/services.dart');
+
+  context.logger.info("Exporting service from ${f.path}");
+
+  f.writeAsString("\nexport '${name}_service.dart';", mode: FileMode.append);
+
+  context.logger.success("Successfully exported service!");
+}
