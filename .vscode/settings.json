@@ -6,4 +6,7 @@
     "conventionalCommitBuilder.autoCommit": false,
     "conventionalCommitBuilder.disableFooter": true,
     "conventionalCommitBuilder.disableBody": true,
+    "conventionalCommits.scopes": [
+        "brick/module"
+    ],
 }
