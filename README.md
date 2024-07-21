@@ -29,22 +29,38 @@ To use the bricks in your project, init you project using `mason init`. Then add
 
 ```yaml
 bricks:
-  module:
-    git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
-      path: module
-  service:
-    git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
-      path: service
   datasource:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks
       path: datasource
+  datasource-impl:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: datasource-impl
   model:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks
       path: model
+  module:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: module
+  screen:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: screen
+  service:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: service
+  service-impl:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: service-impl
+  widget:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: widget
 ```
 
 After adding the bricks to your `mason.yaml` file, run `mason get` to download the bricks into your project.
