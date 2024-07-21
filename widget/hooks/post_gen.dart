@@ -5,11 +5,11 @@ void run(HookContext context) {
   final name = (context.vars['name'] as String).snakeCase;
   final module = (context.vars['module'] as String).snakeCase;
 
-  final f = File('lib/modules/$module/domain/models/models.dart');
+  final f = File('lib/modules/$module/presentation/widgets/widgets.dart');
 
-  context.logger.info("Exporting model at ${f.path}");
+  context.logger.info("Exporting widget at ${f.path}");
 
   f.writeAsString("\nexport '${name}.dart';", mode: FileMode.append);
 
-  context.logger.success("Successfully exported model!");
+  context.logger.success("Successfully exported widget!");
 }

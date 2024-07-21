@@ -7,7 +7,7 @@ void run(HookContext context) {
 
   final f = File('lib/modules/$module/domain/datasources/datasources.dart');
 
-  context.logger.info("Exporting datasource from ${f.path}");
+  context.logger.info("Exporting datasource at ${f.path}");
 
   f.writeAsString("\nexport '${name}_datasource.dart';", mode: FileMode.append);
 

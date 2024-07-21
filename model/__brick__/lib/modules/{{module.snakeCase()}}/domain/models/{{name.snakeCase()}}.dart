@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:{{package}}/modules/{{module.snakeCase()}}/{{module.snakeCase()}}.dart';
 
 part '{{name.snakeCase()}}.freezed.dart';
 {{^skipSerialization}}part '{{name.snakeCase()}}.g.dart';{{/skipSerialization}}

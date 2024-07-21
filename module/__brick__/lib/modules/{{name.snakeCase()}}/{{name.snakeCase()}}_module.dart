@@ -13,7 +13,7 @@ export 'presentation/presentation.dart';
 export 'utils/utils.dart';
 
 
-class {{#pascalCase}}{{name}}{{/pascalCase}}Module extends Module {
+class {{name.pascalCase()}}Module extends Module {
     @override
   List<Module> get imports => [
         CoreModule(),

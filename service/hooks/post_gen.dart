@@ -7,7 +7,7 @@ void run(HookContext context) {
 
   final f = File('lib/modules/$module/domain/services/services.dart');
 
-  context.logger.info("Exporting service from ${f.path}");
+  context.logger.info("Exporting service at ${f.path}");
 
   f.writeAsString("\nexport '${name}_service.dart';", mode: FileMode.append);
 

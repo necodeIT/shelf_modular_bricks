@@ -1,5 +1,5 @@
-name: service
-description: Flutter modular service
+name: service-impl
+description: Flutter modular service concrete Implementation
 
 version: 0.1.0+1
 
@@ -10,6 +10,9 @@ vars:
   module:
     type: string
     prompt: In which module should the service be created in?
+  service:
+    type: string
+    prompt: Parent service
   name:
     type: string
-    prompt: Service name
+    prompt: Implementation name

@@ -1,0 +1,15 @@
+name: repo
+description: Repository
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.53 <0.1.0"
+
+vars:
+  module:
+    type: string
+    prompt: In which module should the repo be created in?
+  name:
+    type: string
+    prompt: Repo name
