@@ -1,6 +1,6 @@
 import 'package:{{package}}/modules/{{module.snakeCase()}}/{{module.snakeCase()}}.dart';
 
-class {{name.pascalCase()}}{{datasource.pascalCase()}}DataSource extends {{datasource.pascalCase()}}DataSource{
+class {{name.pascalCase()}}{{datasource.pascalCase()}}Datasource extends {{datasource.pascalCase()}}Datasource{
   @override
   void dispose() {}
 }

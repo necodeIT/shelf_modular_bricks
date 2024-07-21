@@ -4,7 +4,4 @@ import 'package:{{package}}/modules/{{module.snakeCase()}}/{{module.snakeCase()}
 abstract class {{name.pascalCase()}}Service extends Service{
   @override
   String get name => '{{name.pascalCase()}}';
-
-  @override
-  void dispose() {}
 }
