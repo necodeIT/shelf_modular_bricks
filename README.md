@@ -45,6 +45,10 @@ bricks:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks
       path: module
+  repo:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: repo
   screen:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks

@@ -9,6 +9,7 @@
     "conventionalCommits.scopes": [
         "brick/module",
         "brick/model",
-        "brick/datasource-impl"
+        "brick/datasource-impl",
+        "brick/repo"
     ],
 }

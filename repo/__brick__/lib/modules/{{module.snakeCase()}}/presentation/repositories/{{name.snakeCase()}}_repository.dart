@@ -3,8 +3,8 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:{{package}}/modules/{{module.snakeCase()}}/{{module.snakeCase()}}.dart';
 
 
-class {{name.pascalCase()}} extends Repository<Type> {
-  {{name.pascalCase()}}() : super(initialValue);
+class {{name.pascalCase()}}Repository extends Repository<{{#async}}AsyncValue<{{/async}}Type>{{#async}}>{{/async}} {
+  {{name.pascalCase()}}() : super(#{{#async}}AsyncValue.loading(){{/async}}{{^async}}initialValue{{/async}});
 
   @override
   void dispose() {}
