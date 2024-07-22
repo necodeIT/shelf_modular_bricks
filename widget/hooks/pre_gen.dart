@@ -3,8 +3,6 @@ import 'package:mason/mason.dart';
 import 'package:yaml/yaml.dart';
 
 void run(HookContext context) {
-  context.logger.info('Reading package name');
-
   var f = File('pubspec.yaml');
 
   if (!f.existsSync()) {
@@ -15,6 +13,4 @@ void run(HookContext context) {
   final pubspec = loadYaml(f.readAsStringSync());
 
   context.vars['package'] = pubspec['name'];
-
-  context.logger.success('Successfully read package name!');
 }
