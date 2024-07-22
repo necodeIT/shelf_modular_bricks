@@ -4,7 +4,7 @@ import 'package:{{package}}/modules/{{module.snakeCase()}}/{{module.snakeCase()}
 
 
 class {{name.pascalCase()}}Repository extends Repository<{{#async}}AsyncValue<{{/async}}Type>{{#async}}>{{/async}} {
-  {{name.pascalCase()}}() : super(#{{#async}}AsyncValue.loading(){{/async}}{{^async}}initialValue{{/async}});
+  {{name.pascalCase()}}() : super({{#async}}AsyncValue.loading(){{/async}}{{^async}}initialValue{{/async}});
 
   @override
   void dispose() {}
