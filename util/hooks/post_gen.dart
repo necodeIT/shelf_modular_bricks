@@ -6,7 +6,7 @@ void run(HookContext context) {
   final module = (context.vars['module'] as String).snakeCase;
 
   final f = File(
-    'lib/modules/$module/presentation/utils/utils.dart',
+    'lib/modules/$module/utils/utils.dart',
   );
 
   context.logger.info("Exporting util at ${f.path}");
