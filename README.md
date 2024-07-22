@@ -61,6 +61,10 @@ bricks:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks
       path: service-impl
+  util:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: util
   widget:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks
