@@ -11,6 +11,7 @@
         "brick/model",
         "brick/datasource-impl",
         "brick/repo",
-        "brick/util"
+        "brick/util",
+        "brick/datasource"
     ],
 }

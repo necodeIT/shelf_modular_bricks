@@ -9,7 +9,7 @@ environment:
 vars:
   module:
     type: string
-    prompt: In which module should the model be created in?
+    prompt: In which module should the datasource be created in?
   name:
     type: string
-    prompt: Data source name
+    prompt: Datasource name
