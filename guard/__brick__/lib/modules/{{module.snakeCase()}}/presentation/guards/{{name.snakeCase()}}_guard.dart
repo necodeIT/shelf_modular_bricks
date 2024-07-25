@@ -5,7 +5,7 @@ import 'package:{{package}}/modules/{{module.snakeCase()}}/{{module.snakeCase()}
 
 class {{name.pascalCase()}}Guard extends RouteGuard{
   @override
-  Future<bool> canActivate(String url, ModularRoute route) async {
+  Future<bool> canActivate(String path, ModularRoute route) async {
     return true;
   }
 }
