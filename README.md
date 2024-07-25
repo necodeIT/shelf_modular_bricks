@@ -37,6 +37,10 @@ bricks:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks
       path: datasource-impl
+  guard:
+    git:
+      url: https://github.com/mcquenji/flutter_modular_bricks
+      path: guard
   model:
     git:
       url: https://github.com/mcquenji/flutter_modular_bricks

@@ -12,6 +12,7 @@
         "brick/datasource-impl",
         "brick/repo",
         "brick/util",
-        "brick/datasource"
+        "brick/datasource",
+        "brick/guard"
     ],
 }
