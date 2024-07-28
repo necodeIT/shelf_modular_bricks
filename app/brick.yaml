@@ -1,0 +1,22 @@
+name: app
+description: A new flutter modular app
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.53 <0.1.0"
+
+vars:
+  firebase:
+    type: boolean
+    prompt: Firebase integration required?
+  platforms:
+    type: array
+    values:
+      - android
+      - ios
+      - web
+      - linux
+      - macos
+      - windows
+    prompt: Which platforms does the app support?

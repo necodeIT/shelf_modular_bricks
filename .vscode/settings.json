@@ -13,6 +13,7 @@
         "brick/repo",
         "brick/util",
         "brick/datasource",
-        "brick/guard"
+        "brick/guard",
+        "brick/app"
     ],
 }
