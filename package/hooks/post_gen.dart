@@ -33,7 +33,7 @@ void run(HookContext context) async {
     if (fvmUse.exitCode != 0) {
       fvm.fail('Failed to configure FVM: ${fvmUse.stderr}');
     } else {
-      fvm.complete('FVM configured');
+      fvm.complete('Configured FVM');
     }
   }
 
