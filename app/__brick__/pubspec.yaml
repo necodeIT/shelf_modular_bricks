@@ -1,5 +1,5 @@
 name: {{name.snakeCase()}}
-description: "A new Flutter project."
+description: "A new Flutter project." # TODO: edit this
 
 publish_to: "none"
 

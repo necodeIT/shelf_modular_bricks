@@ -1,4 +1,4 @@
-# __brick__
+# {{name.titleCase()}}
 
 A new Flutter project.
 

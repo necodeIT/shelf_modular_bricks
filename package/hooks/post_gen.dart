@@ -72,6 +72,8 @@ void run(HookContext context) async {
   mason.complete('Downloaded bricks');
 
   context.logger.warn(
-    'Please remember to edit `README.md` to match your project and update the `description` in the `pubspec.yaml` file.',
+    'Please remember to edit `README.md` to match your project and update the `description` and `homepage` in the `pubspec.yaml` file.',
   );
+
+  context.logger.info('All done! 🚀\nRun `mason make module` to get started.');
 }

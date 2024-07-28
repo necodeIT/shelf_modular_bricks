@@ -1,0 +1,11 @@
+# Flutter
+pubspec.lock
+.metadata
+.dart_tool
+
+# Mason
+.mason
+mason-lock.json
+
+# FVM
+.fvm/

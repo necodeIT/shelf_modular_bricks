@@ -2,7 +2,32 @@
 
 Bricks for working with [flutter_modular](https://pub.dev/packages/flutter_modular).
 
-## Requirements
+## Global Bricks
+
+To bootstrap your projects install these bricks globally:
+
+```bash
+mason add -g app --git-url https://github.com/mcquenji/flutter_modular_bricks --git-path app
+mason add -g package --git-url https://github.com/mcquenji/flutter_modular_bricks --git-path package
+```
+
+Now you can use the following commands to create your new app:
+
+```bash
+mason make app
+```
+
+or package:
+
+```bash
+mason make package
+```
+
+## Local Bricks
+
+You can skip this if you've created your project using the global bricks.
+
+### Requirements
 
 You must have [mason_cli](https://pub.dev/packages/mason_cli) installed on your system and your project must have the following dependencies installed:
 
@@ -23,7 +48,7 @@ dev_dependencies:
   json_serializable: ^6.8.0
 ```
 
-## Installation
+### Installation
 
 To use the bricks in your project, init you project using `mason init`. Then add the bricks to your project by pasting the following code in your `mason.yaml` file:
 
