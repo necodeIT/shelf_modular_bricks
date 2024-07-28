@@ -21,7 +21,7 @@ void run(HookContext context) async {
 
   context.vars['useFvm'] = useFvm;
 
-  if (useFvm) {
+  if (!useFvm) {
     context.logger.warn(
       'FVM is not installed. It is recommended to use FVM.\nSee https://fvm.app/ for installation instructions.',
     );
