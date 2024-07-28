@@ -7,20 +7,9 @@ void run(HookContext context) async {
 
   final progress = context.logger.progress('Downloading packages');
 
-  final fvmTest = await Process.run(
-    'fvm',
-    ['--version'],
-    runInShell: true,
-    workingDirectory: workDir,
-  );
+  final useFvm = context.vars['useFvm'] as bool;
 
-  final useFvm = fvmTest.exitCode == 0;
-
-  if (!useFvm) {
-    context.logger.warn(
-      'FVM is not installed. It is recommended to use FVM.\nSee https://fvm.app/ for installation instructions.',
-    );
-  } else {
+  if (useFvm) {
     final fvm = context.logger.progress('FVM detected. Configuring');
 
     final fvmUse = await Process.run(

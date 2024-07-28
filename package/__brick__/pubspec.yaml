@@ -2,14 +2,15 @@ name: {{name.snakeCase()}}
 description: "A new Flutter package project." # TODO: edit this
 version: 0.0.1
 homepage: # TODO: edit this
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 environment:
   sdk: ">=3.4.3 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
-  collection: ^1.18.0
   bloc: ^8.1.4
+  collection: ^1.18.0
   either_dart: ^1.0.0
   flutter:
     sdk: flutter
