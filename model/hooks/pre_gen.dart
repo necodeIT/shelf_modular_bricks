@@ -13,4 +13,19 @@ void run(HookContext context) {
   final pubspec = loadYaml(f.readAsStringSync());
 
   context.vars['package'] = pubspec['name'];
+
+  // --- Prompt module --- //
+
+  final modulesDir = Directory('lib/modules');
+
+  final modules = modulesDir
+      .listSync()
+      .where((e) => e is Directory)
+      .map((e) => e.path.split('/').last)
+      .toList();
+
+  context.vars['module'] = context.logger.chooseOne(
+    'In which module should the model be created in?',
+    choices: modules,
+  );
 }

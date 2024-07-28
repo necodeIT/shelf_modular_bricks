@@ -13,4 +13,38 @@ void run(HookContext context) {
   final pubspec = loadYaml(f.readAsStringSync());
 
   context.vars['package'] = pubspec['name'];
+
+  // --- Prompt module --- //
+
+  final modulesDir = Directory('lib/modules');
+
+  final modules = modulesDir
+      .listSync()
+      .where((e) => e is Directory)
+      .map((e) => e.path.split('/').last)
+      .toList();
+
+  context.vars['module'] = context.logger.chooseOne(
+    'In which module should the service be created in?',
+    choices: modules,
+  );
+
+  // --- Prompt service --- //
+
+  final servicesDir = Directory(
+    'lib/modules/${context.vars['module']}/domain/services',
+  );
+
+  final services = servicesDir
+      .listSync()
+      .where((e) => e is File)
+      .map(
+        (e) => e.path.split('/').last.split('.').first.pascalCase,
+      )
+      .toList();
+
+  context.vars['service'] = context.logger.chooseOne(
+    'Parent service',
+    choices: services,
+  );
 }

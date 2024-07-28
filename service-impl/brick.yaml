@@ -7,12 +7,6 @@ environment:
   mason: ">=0.1.0-dev.53 <0.1.0"
 
 vars:
-  module:
-    type: string
-    prompt: In which module should the service be created in?
-  service:
-    type: string
-    prompt: Parent service
   name:
     type: string
     prompt: Implementation name

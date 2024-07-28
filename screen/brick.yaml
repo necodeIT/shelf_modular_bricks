@@ -7,9 +7,6 @@ environment:
   mason: ">=0.1.0-dev.53 <0.1.0"
 
 vars:
-  module:
-    type: string
-    prompt: In which module should the screen be created in?
   name:
     type: string
     prompt: Screen name
