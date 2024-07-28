@@ -21,7 +21,7 @@ void run(HookContext context) {
   final modules = modulesDir
       .listSync()
       .where((e) => e is Directory)
-      .map((e) => e.path.split('/').last)
+      .map((e) => e.path.split('/').last.pascalCase)
       .toList();
 
   context.vars['module'] = context.logger.chooseOne(
@@ -42,6 +42,8 @@ void run(HookContext context) {
         (e) => e.path.split('/').last.split('.').first.pascalCase,
       )
       .toList();
+
+  services.remove('Services');
 
   context.vars['service'] = context.logger.chooseOne(
     'Parent service',

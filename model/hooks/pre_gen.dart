@@ -21,7 +21,7 @@ void run(HookContext context) {
   final modules = modulesDir
       .listSync()
       .where((e) => e is Directory)
-      .map((e) => e.path.split('/').last)
+      .map((e) => e.path.split('/').last.pascalCase)
       .toList();
 
   context.vars['module'] = context.logger.chooseOne(

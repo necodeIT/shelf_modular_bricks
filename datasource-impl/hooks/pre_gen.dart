@@ -21,7 +21,7 @@ void run(HookContext context) {
   final modules = modulesDir
       .listSync()
       .where((e) => e is Directory)
-      .map((e) => e.path.split('/').last)
+      .map((e) => e.path.split('/').last.pascalCase)
       .toList();
 
   context.vars['module'] = context.logger.chooseOne(
@@ -31,11 +31,11 @@ void run(HookContext context) {
 
   // --- Prompt service --- //
 
-  final servicesDir = Directory(
+  final dataSourcesDirectory = Directory(
     'lib/modules/${context.vars['module']}/domain/datasources',
   );
 
-  final services = servicesDir
+  final dataSources = dataSourcesDirectory
       .listSync()
       .where((e) => e is File)
       .map(
@@ -43,8 +43,10 @@ void run(HookContext context) {
       )
       .toList();
 
+  dataSources.remove('Datasources');
+
   context.vars['datasource'] = context.logger.chooseOne(
     'Parent datasource',
-    choices: services,
+    choices: dataSources,
   );
 }
