@@ -30,13 +30,11 @@ void run(HookContext context) async {
       workingDirectory: workDir,
     );
 
-    if (await fvmUse.exitCode != 0) {
+    if (fvmUse.exitCode != 0) {
       fvm.fail('Failed to configure FVM: ${fvmUse.stderr}');
-
-      exit(1);
+    } else {
+      fvm.complete('FVM configured');
     }
-
-    fvm.complete('FVM configured');
   }
 
   final result = await Process.run(
@@ -48,11 +46,9 @@ void run(HookContext context) async {
 
   if (result.exitCode != 0) {
     progress.fail('Failed to fetch dependencies: ${result.stderr}');
-
-    exit(1);
+  } else {
+    progress.complete('Downloaded packages');
   }
-
-  progress.complete('Downloaded packages');
 
   final mason = context.logger.progress('Downloading bricks');
 
@@ -65,15 +61,9 @@ void run(HookContext context) async {
 
   if (masonProc.exitCode != 0) {
     mason.fail('Failed to fetch bricks: ${masonProc.stderr}');
-
-    exit(1);
+  } else {
+    mason.complete('Downloaded bricks');
   }
-
-  mason.complete('Downloaded bricks');
-
-  context.logger.warn(
-    'Please remember to edit `README.md` to match your project and update the `description` and `homepage` in the `pubspec.yaml` file.',
-  );
 
   context.logger.info('All done! 🚀\nRun `mason make module` to get started.');
 }
