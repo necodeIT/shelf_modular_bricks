@@ -32,7 +32,7 @@ void run(HookContext context) {
   // --- Prompt service --- //
 
   final servicesDir = Directory(
-    'lib/modules/${context.vars['module']}/domain/services',
+    'lib/modules/${context.vars['module'].snakeCase}/domain/services',
   );
 
   final services = servicesDir
