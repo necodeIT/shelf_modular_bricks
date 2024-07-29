@@ -9,7 +9,7 @@ void run(HookContext context) {
 
   context.logger.info("Exporting screen at ${f.path}");
 
-  f.writeAsString("\nexport '${name}_screen.dart';", mode: FileMode.append);
+  f.writeAsString("export '${name}_screen.dart';", mode: FileMode.append);
 
   context.logger.success("Successfully exported screen!");
 }

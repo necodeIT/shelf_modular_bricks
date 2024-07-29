@@ -11,7 +11,7 @@ void run(HookContext context) {
   context.logger.info("Exporting service impl at ${f.path}");
 
   f.writeAsString(
-    "\nexport '${name}_${service}.dart';",
+    "export '${name}_${service}.dart';",
     mode: FileMode.append,
   );
 

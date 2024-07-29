@@ -11,7 +11,7 @@ void run(HookContext context) {
 
   context.logger.info("Exporting util at ${f.path}");
 
-  f.writeAsString("\nexport '${name}_utils.dart';", mode: FileMode.append);
+  f.writeAsString("export '${name}_utils.dart';", mode: FileMode.append);
 
   context.logger.success("Successfully exported util!");
 }

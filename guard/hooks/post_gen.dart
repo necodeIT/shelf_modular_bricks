@@ -9,7 +9,7 @@ void run(HookContext context) {
 
   context.logger.info("Exporting route guard at ${f.path}");
 
-  f.writeAsString("\nexport '${name}_guard.dart';", mode: FileMode.append);
+  f.writeAsString("export '${name}_guard.dart';", mode: FileMode.append);
 
   context.logger.success("Successfully exported route guard!");
 }

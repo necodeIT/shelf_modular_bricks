@@ -11,7 +11,7 @@ void run(HookContext context) {
   context.logger.info("Exporting datasource impl at ${f.path}");
 
   f.writeAsString(
-    "\nexport '${name}_${datasource}.dart';",
+    "export '${name}_${datasource}.dart';",
     mode: FileMode.append,
   );
 

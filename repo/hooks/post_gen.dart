@@ -11,7 +11,7 @@ void run(HookContext context) {
 
   context.logger.info("Exporting repository at ${f.path}");
 
-  f.writeAsString("\nexport '${name}_repository.dart';", mode: FileMode.append);
+  f.writeAsString("export '${name}_repository.dart';", mode: FileMode.append);
 
   context.logger.success("Successfully exported repository!");
 }

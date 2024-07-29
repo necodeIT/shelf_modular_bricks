@@ -9,7 +9,7 @@ void run(HookContext context) {
 
   context.logger.info("Exporting widget at ${f.path}");
 
-  f.writeAsString("\nexport '${name}.dart';", mode: FileMode.append);
+  f.writeAsString("export '${name}.dart';", mode: FileMode.append);
 
   context.logger.success("Successfully exported widget!");
 }

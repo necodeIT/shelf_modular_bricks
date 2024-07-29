@@ -9,7 +9,7 @@ void run(HookContext context) {
 
   context.logger.info("Exporting datasource at ${f.path}");
 
-  f.writeAsString("\nexport '${name}_datasource.dart';", mode: FileMode.append);
+  f.writeAsString("export '${name}_datasource.dart';", mode: FileMode.append);
 
   context.logger.success("Successfully exported datasource!");
 }
