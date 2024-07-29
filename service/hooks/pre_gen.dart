@@ -25,7 +25,7 @@ void run(HookContext context) {
       .toList();
 
   context.vars['module'] = context.logger.chooseOne(
-    'In which module should the service be created in?',
+    'Parent module',
     choices: modules,
   );
 }
