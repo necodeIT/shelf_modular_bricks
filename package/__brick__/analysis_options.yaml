@@ -34,17 +34,27 @@ architecture_linter:
     - layer: *utils
       severity: error
   banned_imports:
+    # Only import the module itself.
     - layer: *domain
       banned:
         - *presentation
         - *infra
+        - *domain
         - *utils
+      # Only import the module itself.
+      # We allow infra imports for doc comments.
     - layer: *infra
       banned:
         - *presentation
+        - *domain
+        - *utils
+      # Only import the module itself.
     - layer: *presentation
       banned:
+        - *presentation
         - *infra
+        - *domain
+        - *utils
 
 linter:
   rules:
@@ -55,3 +65,6 @@ linter:
     package_names: true
     lines_longer_than_80_chars: false
     sort_pub_dependencies: true
+    join_return_with_assignment: true
+    prefer_for_elements_to_map_fromIterable: true
+    # yet to be released: document_ignores: true
