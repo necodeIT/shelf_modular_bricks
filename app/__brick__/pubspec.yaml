@@ -33,11 +33,15 @@ dependencies:
     sdk: flutter
   intl: any
   logging: ^1.2.0
+  flutter_svg: ^2.0.10+1
+  vector_graphics: any
+  flutter_animate: ^4.5.0
+
 
 dev_dependencies:
   architecture_linter: ^0.2.2
   build_runner: ^2.4.11
-  flutter_gen: ^5.6.0
+  flutter_gen_runner: ^5.6.0
   flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
