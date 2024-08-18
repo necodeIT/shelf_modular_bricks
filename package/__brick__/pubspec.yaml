@@ -1,4 +1,4 @@
-name: { { name.snakeCase() } }
+name: {{name.snakeCase()}}
 description: "A new Flutter package project." # TODO: edit this
 version: 0.0.1
 homepage: # TODO: edit this
