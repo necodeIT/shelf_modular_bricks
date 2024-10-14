@@ -1,20 +1,19 @@
 # Flutter Modular Bricks
 
-Bricks for working with [flutter_modular](https://pub.dev/packages/flutter_modular).
+Bricks for working with [shelf_modular](https://pub.dev/packages/shelf_modular).
 
 ## Global Bricks
 
 To bootstrap your projects install these bricks globally:
 
 ```bash
-mason add -g app --git-url https://github.com/mcquenji/flutter_modular_bricks --git-path app
-mason add -g package --git-url https://github.com/mcquenji/flutter_modular_bricks --git-path package
+mason add -g server --git-url https://github.com/necodeIT/shelf_modular_bricks --git-path server
 ```
 
-Now you can use the following commands to create your new app:
+Now you can use the following commands to create your new server:
 
 ```bash
-mason make app
+mason make server
 ```
 
 or package:
@@ -34,7 +33,8 @@ You must have [mason_cli](https://pub.dev/packages/mason_cli) installed on your 
 ```yaml
 dependencies:
   bloc: ^8.1.4
-  flutter_modular: ^6.3.4
+  shelf_modular: ^2.1.0
+  shelf: ^1.4.2
   freezed_annotation: ^2.4.4
   json_annotation: ^4.9.0
   mcquenji_core:
@@ -56,48 +56,40 @@ To use the bricks in your project, init you project using `mason init`. Then add
 bricks:
   datasource:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: datasource
   datasource-impl:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: datasource-impl
   guard:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: guard
   model:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: model
   module:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: module
-  repo:
-    git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
-      path: repo
   screen:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: screen
   service:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: service
   service-impl:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: service-impl
   util:
     git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
+      url: https://github.com/necodeIT/shelf_modular_bricks
       path: util
-  widget:
-    git:
-      url: https://github.com/mcquenji/flutter_modular_bricks
-      path: widget
 ```
 
 After adding the bricks to your `mason.yaml` file, run `mason get` to download the bricks into your project.

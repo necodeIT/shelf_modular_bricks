@@ -1,23 +1,14 @@
-library {{package}}.modules.{name.snakeCase()};
-
+library {{name}}.modules.server;
 
 import 'package:shelf_modular/shelf_modular.dart';
 import 'package:mcquenji_core/mcquenji_core.dart';
 
-import 'domain/domain.dart';
-import 'presentation/presentation.dart';
-import 'infra/infra.dart';
-import 'utils/utils.dart';
-
-
-
 export 'domain/domain.dart';
 export 'presentation/presentation.dart';
-export 'utils/utils.dart';
 
-
-class {{name.pascalCase()}}Module extends Module {
-    @override
+/// Root module of the application.
+class AppModule extends Module {
+  @override
   List<Module> get imports => [
         CoreModule(),
       ];
