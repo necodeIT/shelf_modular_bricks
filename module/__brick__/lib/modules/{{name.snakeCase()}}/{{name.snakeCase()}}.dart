@@ -1,4 +1,4 @@
-library {{package}}.modules.{name.snakeCase()};
+library {{package}}.modules.{{name.snakeCase()}};
 
 
 import 'package:shelf_modular/shelf_modular.dart';
