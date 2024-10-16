@@ -62,6 +62,10 @@ bricks:
     git:
       url: https://github.com/necodeIT/shelf_modular_bricks
       path: datasource-impl
+  resource:
+    git:
+      url: https://github.com/necodeIT/shelf_modular_bricks
+      path: resource
   guard:
     git:
       url: https://github.com/necodeIT/shelf_modular_bricks
@@ -74,10 +78,10 @@ bricks:
     git:
       url: https://github.com/necodeIT/shelf_modular_bricks
       path: module
-  screen:
+  handler:
     git:
       url: https://github.com/necodeIT/shelf_modular_bricks
-      path: screen
+      path: handler
   service:
     git:
       url: https://github.com/necodeIT/shelf_modular_bricks
