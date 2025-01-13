@@ -5,7 +5,7 @@ void run(HookContext context) {
   final name = (context.vars['name'] as String).snakeCase;
   final module = (context.vars['module'] as String).snakeCase;
 
-  final f = File('lib/modules/$module/presentation/resources/resources.dart');
+  final f = File('lib/src/$module/presentation/resources/resources.dart');
 
   context.logger.info("Exporting resource at ${f.path}");
 
